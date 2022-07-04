@@ -31,7 +31,7 @@ export default {
       url:"http://123.57.109.30:3006/api/getbooks",
       method:"GET",
     }).then((res)=>{
-      console.log(res);
+      // console.log(res);
       this.list = res.data.data
     })
   }
