@@ -22,7 +22,7 @@ export default {
                     bookname: this.bookname
                 }
             }).then(res=>{
-                console.log(res);
+                // console.log(res);
                 this.$parent.list= res.data.data
             })
         }
