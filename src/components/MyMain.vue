@@ -10,10 +10,12 @@
       <el-table-column prop="publisher" label="出版商" width="250">
       </el-table-column>
       <el-table-column prop="appkey" label="操作" width="150">
+        <button>删除</button>
+        <button>详情</button>
       </el-table-column>
     </el-table>
   </div>
-</template>
+</template> 
 
 <script>
 export default {

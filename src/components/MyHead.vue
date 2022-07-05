@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="text" placeholder="搜索——书本名称" v-model="bookname" @keydown.enter='findFn'>
-  </div>
+  </div> 
 </template>
 
 <script>
@@ -14,10 +14,9 @@ export default {
     },
     methods:{
         findFn(){
-            console.log(111);
             if(this.bookname==''){return alert('你是傻子么')}
             axios({
-                url:'http://123.57.109.30:3006/api/getbooks',
+                url:'http://www.liulongbin.top:3006/api/getbooks',
                 method: 'GET',
                 params:{
                     bookname: this.bookname

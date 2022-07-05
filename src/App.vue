@@ -6,7 +6,7 @@
     <MyMain :list='list'></MyMain>
     <!-- foot -->
     <MyFoot></MyFoot>
-  </div>
+  </div> 
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
   },
   created(){
     axios({
-      url:"http://123.57.109.30:3006/api/getbooks",
+      url:"http://www.liulongbin.top:3006/api/getbooks",
       method:"GET",
     }).then((res)=>{
       // console.log(res);
